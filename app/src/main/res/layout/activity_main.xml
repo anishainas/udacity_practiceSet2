@@ -30,42 +30,48 @@
                 android:id="@+id/scoreA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
                 android:text="0"
                 android:textAlignment="center"
                 android:textColor="#4689C8"
-                android:textSize="70dp"
-                android:paddingVertical="16dp"/>
+                android:textSize="70dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="15dp"
                 android:text="+3 Points"
                 android:textAllCaps="true"
-                android:layout_marginBottom="8dp"
-                android:textAppearance="?android:textAppearanceMedium"/>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="+3 Points"
-                android:layout_marginBottom="8dp"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textAllCaps="true" />
+                android:onClick="add3A"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:padding="15dp"
+                android:text="+2 Points"
+                android:textAllCaps="true"
+                android:onClick="add2A"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="15dp"
                 android:text="Free Throw"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:onClick="add1A"
+                android:textAppearance="?android:textAppearanceMedium" />
         </LinearLayout>
 
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -87,45 +93,53 @@
                 android:id="@+id/scoreB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
                 android:text="0"
                 android:textAlignment="center"
-                android:textSize="70dp"
-                android:paddingVertical="16dp"
-                android:textColor="#4689C8" />
+                android:textColor="#4689C8"
+                android:textSize="70dp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="+3 Points"
                 android:layout_marginBottom="8dp"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textAllCaps="true" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:text="+3 Points"
-                android:layout_marginBottom="8dp"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:onClick="add3B"
+                android:textAppearance="?android:textAppearanceMedium" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="15dp"
+                android:text="+2 Points"
+                android:textAllCaps="true"
+                android:onClick="add2B"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="15dp"
                 android:text="Free Throw"
-                android:layout_marginBottom="8dp"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:onClick="add1B"
+                android:textAppearance="?android:textAppearanceMedium" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset"
-        android:textAllCaps="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp"
+        android:padding="15dp"
+        android:text="Reset"
+        android:textAllCaps="true"
+        android:onClick="reset"
+        android:textAppearance="?android:textAppearanceMedium"/>
 </RelativeLayout>
